@@ -9,6 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @AppStorage("emoji", store: UserDefaults(suiteName: "group.au.com.maccastech.SexyWidget"))
+    var emojiData: Data = Data()
+    
     let emojis = [
     
         Emoji(icon: "❤️", name: "Love", description: "A whole lotta love"),
@@ -18,9 +21,23 @@ struct ContentView: View {
     
     
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack(spacing: 30) {
+            ForEach(emojis) { emoji in
+                EmojiView(emoji: emoji)
+                    .onTapGesture(count: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/, perform: {
+                        save(emoji)
+                    })
+            }
+        }
     }
+    
+    func save(_ emoji: Emoji) {
+        guard let emojiData = try? JSONEncoder().encode(emoji) else { return }
+        self.emojiData = emojiData
+        print("save \(emoji)")
+        
+    }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
