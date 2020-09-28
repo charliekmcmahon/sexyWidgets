@@ -15,6 +15,8 @@
 		517CC9FF2521714E0066FE63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 517CC9FD2521714E0066FE63 /* LaunchScreen.storyboard */; };
 		517CCA0A2521714F0066FE63 /* SexyWidgetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517CCA092521714F0066FE63 /* SexyWidgetTests.swift */; };
 		517CCA152521714F0066FE63 /* SexyWidgetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517CCA142521714F0066FE63 /* SexyWidgetUITests.swift */; };
+		517CCA26252171A10066FE63 /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517CCA25252171A10066FE63 /* Emoji.swift */; };
+		517CCA2B2521743A0066FE63 /* EmojiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517CCA2A2521743A0066FE63 /* EmojiView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		517CCA102521714F0066FE63 /* SexyWidgetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SexyWidgetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		517CCA142521714F0066FE63 /* SexyWidgetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SexyWidgetUITests.swift; sourceTree = "<group>"; };
 		517CCA162521714F0066FE63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		517CCA25252171A10066FE63 /* Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
+		517CCA2A2521743A0066FE63 /* EmojiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 				517CC9F22521714C0066FE63 /* AppDelegate.swift */,
 				517CC9F42521714C0066FE63 /* SceneDelegate.swift */,
 				517CC9F62521714C0066FE63 /* ContentView.swift */,
+				517CCA2A2521743A0066FE63 /* EmojiView.swift */,
+				517CCA25252171A10066FE63 /* Emoji.swift */,
 				517CC9F82521714E0066FE63 /* Assets.xcassets */,
 				517CC9FD2521714E0066FE63 /* LaunchScreen.storyboard */,
 				517CCA002521714E0066FE63 /* Info.plist */,
@@ -268,7 +274,9 @@
 			files = (
 				517CC9F32521714C0066FE63 /* AppDelegate.swift in Sources */,
 				517CC9F52521714C0066FE63 /* SceneDelegate.swift in Sources */,
+				517CCA26252171A10066FE63 /* Emoji.swift in Sources */,
 				517CC9F72521714C0066FE63 /* ContentView.swift in Sources */,
+				517CCA2B2521743A0066FE63 /* EmojiView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
